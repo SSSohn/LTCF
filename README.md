@@ -39,7 +39,7 @@ This repository contains a dataset of 87,430 simulated crowd flows used in [Layi
         +---Testing
         \---Training
 ```
-In each of the `Training` and `Testing`, there are 10 sub-folders: 
+In each of the `Training` and `Testing` folders, there are 10 sub-folders: 
 ```
 +---A
 +---A'
