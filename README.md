@@ -10,3 +10,32 @@ This repository contains a dataset of 87,430 simulated crowd flows used in [Layi
   year      = {2020}
 }
 ```
+
+## Folder Structure
+```
++---Proxy Crowd Flow
+|   +---CR 1.00
+|   |   +---Testing
+|   |   \---Training
+|   +---CR 1.25
+|   |   +---Testing
+|   |   \---Training
+|   +---CR 1.50
+|   |   +---Testing
+|   |   \---Training
+|   +---CR 1.75
+|   |   +---Testing
+|   |   \---Training
+|   \---CR 2.00
+|       +---Testing
+|       \---Training
+\---Simulated Crowd Flow
+    +---Multi-Goal Non-Uniform Agents
+    |   +---Testing
+    |   \---Training
+    +---Non-Axis-Aligned Real Floorplans
+    |   \---Testing
+    \---Single-Goal Uniform Agents
+        +---Testing
+        \---Training
+```
