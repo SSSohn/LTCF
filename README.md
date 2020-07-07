@@ -53,4 +53,4 @@ In each of the `Training` and `Testing`, there are 10 sub-folders:
 \---Y'
 ```
 
-<p align="center"><img src="Framework Image.png" width="70%" alt="" /></p>
+<p align="center"><img src="Framework Image.png" width="100%" alt="" /></p>
