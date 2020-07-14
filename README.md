@@ -53,6 +53,9 @@ In each of the `Training` and `Testing` folders, there are 10 sub-folders, each 
 \---Y' (Compressed Ground Truth)
 ```
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| <p align="center"><img src="Proxy Crowd Flow/CR 1.50/Testing/A'/0.png" width="100%" alt="" /></p>      | right-aligned | $1600 |
 <p align="center"><img src="Framework Image.png" width="100%" alt="" /></p>
 
 ## Testing
