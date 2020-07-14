@@ -53,9 +53,12 @@ In each of the `Training` and `Testing` folders, there are 10 sub-folders, each 
 \---Y' (Compressed Ground Truth)
 ```
 
+## Dataset Sample
 | A | G | E | Cx' | Cy' | A' | G' | E' | Y | Y' |
 |---|---|---|---|---|---|---|---|---|---|
 | <p align="center"><img src="Proxy Crowd Flow/CR 1.50/Testing/A/0.png" width="100%" alt="" /></p> | <p align="center"><img src="Proxy Crowd Flow/CR 1.50/Testing/G/0.png" width="100%" alt="" /></p> | <p align="center"><img src="Proxy Crowd Flow/CR 1.50/Testing/E/0.png" width="100%" alt="" /></p> | <p align="center"><img src="Proxy Crowd Flow/CR 1.50/Testing/Cx'/0.png" width="100%" alt="" /></p> | <p align="center"><img src="Proxy Crowd Flow/CR 1.50/Testing/Cy'/0.png" width="100%" alt="" /></p> | <p align="center"><img src="Proxy Crowd Flow/CR 1.50/Testing/A'/0.png" width="100%" alt="" /></p> | <p align="center"><img src="Proxy Crowd Flow/CR 1.50/Testing/G'/0.png" width="100%" alt="" /></p> | <p align="center"><img src="Proxy Crowd Flow/CR 1.50/Testing/E'/0.png" width="100%" alt="" /></p> | <p align="center"><img src="Proxy Crowd Flow/CR 1.50/Testing/Y/0.png" width="100%" alt="" /></p> | <p align="center"><img src="Proxy Crowd Flow/CR 1.50/Testing/Y'/0.png" width="100%" alt="" /></p> | 
+
+## Framework
 <p align="center"><img src="Framework Image.png" width="100%" alt="" /></p>
 
 ## Testing
