@@ -55,5 +55,5 @@ In each of the `Training` and `Testing` folders, there are 10 sub-folders, each 
 
 <p align="center"><img src="Framework Image.png" width="100%" alt="" /></p>
 
-## Testing
-In order to test the pre-trained models located in `Models/Pre-Trained Models/`, place `Cx'/`, `Cy'/`, `A'/`, `G'/`, and `E'/` into `Models/Testing/` and run `Models/RunTesting.py` (written in Python 3.6.5). This will output the prediction results into `Models/Output/`.
+%## Testing
+%In order to test the pre-trained models located in `Models/Pre-Trained Models/`, place `Cx'/`, `Cy'/`, `A'/`, `G'/`, and `E'/` into `Models/Testing/` and run `Models/RunTesting.py` (written in Python 3.6.5). This will output the prediction results into `Models/Output/`.
