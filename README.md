@@ -39,7 +39,7 @@ This repository contains a dataset of 87,430 simulated crowd flows used in [Layi
         +---Testing
         \---Training
 ```
-In each of the `Training` and `Testing` folders, there are 10 sub-folders: 
+In each of the `Training` and `Testing` folders, there are 10 sub-folders, each corresponding to a component in the Framework Image below:
 ```
 +---A
 +---A'
@@ -49,8 +49,8 @@ In each of the `Training` and `Testing` folders, there are 10 sub-folders:
 +---E'
 +---G
 +---G'
-+---Y
-\---Y'
++---Y  (Ground Truth)
+\---Y' (Compressed Ground Truth)
 ```
 
 <p align="center"><img src="Framework Image.png" width="100%" alt="" /></p>
