@@ -13,22 +13,30 @@ This repository contains a dataset of 87,430 simulated crowd flows used in [Layi
 
 ## Installation
 
-1. Clone this repository. In [Google Drive](https://drive.google.com/drive/folders/1Nw2OwdJU3K_IfR6Gexw-5raCpegKsFwv?usp=sharing), download the pre-trained models and place them in the `Models/Pre-Trained Models/` directory.
+1. Clone this repository.
 
 	```
 	>> git clone https://github.com/SSSohn/LTCF.git
-	>> cd LTCF
+	>> cd LTCF/
 	```
 
-2. We recommend installing Python v3.6.5 from [Anaconda](https://www.anaconda.com/), installing PyTorch (>= 1.1.0) following guide on the [official instructions](https://pytorch.org/) according to your specific CUDA version.
+2. Download the pre-trained models from [Google Drive](https://drive.google.com/drive/folders/1Nw2OwdJU3K_IfR6Gexw-5raCpegKsFwv?usp=sharing) and place them in the `Models/Pre-Trained Models/` directory.
+
+2. We recommend installing Python v3.6.5 from [Anaconda](https://www.anaconda.com/) and installing PyTorch (>= 1.1.0) following the guide on the [official instructions](https://pytorch.org/) according to your specific CUDA version.
 
 ## Training
+If you want to reproduce the results of our pretrained models, first move the training and testing data into `Models/Data/` and then run the following commands:
 
-(TBA)
-
+	```
+	>> cd Models/
+	>> python Models/1_RunDataPreparation.py
+	>> python Models/2_RunTraining.py
+	```
+	
+This will train a new model for 200 epochs with a batch size of 32, learning rate of 0.01, and a momentum of 0.9.
 
 ## Testing
-In order to test the pre-trained models located in `Models/Pre-Trained Models/` on one of the Testing sets, move the contents of the Testing set into `Models/Testing/` and run `Models/RunTesting.py`. This will convert the image files into numpy files and predict the output using the specified model. The output images are saved in `Models/Output/`.
+In order to test the pre-trained models located in `Models/Pre-Trained Models/` on one of the Testing sets, move the contents of the Testing set into `Models/Data/Testing/` and run `Models/3_RunTesting.py`. This will convert the image files into Numpy files and predict the output using the specified model. The output images are saved in `Models/Output/`.
 
 
 ## Folder Structure
