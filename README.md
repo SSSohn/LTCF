@@ -27,16 +27,9 @@ This repository contains a dataset of 87,430 simulated crowd flows used in [Layi
 ## Training
 If you want to reproduce the results of our pretrained models, first move the training and testing data into `Models/Data/` and then run the following commands:
 
-	```
 	>> cd Models/
 	>> python Models/1_RunDataPreparation.py
 	>> python Models/2_RunTraining.py
-	```
-
-	```
-	>> git clone https://github.com/SSSohn/LTCF.git
-	>> cd LTCF/
-	```
 
 This will train a new model for 200 epochs with a batch size of 32, learning rate of 0.01, and a momentum of 0.9.
 
