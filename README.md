@@ -22,7 +22,7 @@ This repository contains a dataset of 87,430 simulated crowd flows used in [Layi
 
 2. Download the pre-trained models from [Google Drive](https://drive.google.com/drive/folders/1Nw2OwdJU3K_IfR6Gexw-5raCpegKsFwv?usp=sharing) and place them in the `Models/Pre-Trained Models/` directory.
 
-2. We recommend installing Python v3.6.5 from [Anaconda](https://www.anaconda.com/) and installing PyTorch (>= 1.1.0) following the guide on the [official instructions](https://pytorch.org/) according to your specific CUDA version.
+2. We recommend installing Python v3.6.5 from [Anaconda](https://www.anaconda.com/) and installing PyTorch (>= 1.1.0) by following the guidelines on the [official instructions](https://pytorch.org/) according to your specific CUDA version.
 
 ## Training
 If you want to reproduce the results of our pretrained models, first move the training and testing data into `Models/Data/` and then run the following commands:
@@ -32,7 +32,12 @@ If you want to reproduce the results of our pretrained models, first move the tr
 	>> python Models/1_RunDataPreparation.py
 	>> python Models/2_RunTraining.py
 	```
-	
+
+	```
+	>> git clone https://github.com/SSSohn/LTCF.git
+	>> cd LTCF/
+	```
+
 This will train a new model for 200 epochs with a batch size of 32, learning rate of 0.01, and a momentum of 0.9.
 
 ## Testing
