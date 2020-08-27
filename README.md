@@ -86,3 +86,8 @@ In each of the `Training` and `Testing` folders, there are 10 sub-folders, each 
 
 ## Framework
 <p align="center"><img src="Framework Image.png" width="100%" alt="" /></p>
+
+## Acknowledgement
+Part of our code is borrowed from the following repository:
+
+* [segnet_pytorch](https://github.com/delta-onera/segnet_pytorch)
