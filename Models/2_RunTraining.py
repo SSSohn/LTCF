@@ -17,7 +17,7 @@ modelName = "New Model"
 input_nbr = 5
 output_nbr = 1
 iterations = 200
-batchsize = 4
+batchsize = 32
 
 # ----------------------Prepare Dataset-----------------------------
 def default_loader(path):
