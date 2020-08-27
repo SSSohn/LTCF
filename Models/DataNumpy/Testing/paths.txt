@@ -1,0 +1,10 @@
+DataNumpy/Testing/Input/0.npy DataNumpy/Testing/Output/0.npy
+DataNumpy/Testing/Input/1.npy DataNumpy/Testing/Output/1.npy
+DataNumpy/Testing/Input/2.npy DataNumpy/Testing/Output/2.npy
+DataNumpy/Testing/Input/3.npy DataNumpy/Testing/Output/3.npy
+DataNumpy/Testing/Input/4.npy DataNumpy/Testing/Output/4.npy
+DataNumpy/Testing/Input/5.npy DataNumpy/Testing/Output/5.npy
+DataNumpy/Testing/Input/6.npy DataNumpy/Testing/Output/6.npy
+DataNumpy/Testing/Input/7.npy DataNumpy/Testing/Output/7.npy
+DataNumpy/Testing/Input/8.npy DataNumpy/Testing/Output/8.npy
+DataNumpy/Testing/Input/9.npy DataNumpy/Testing/Output/9.npy

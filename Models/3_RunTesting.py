@@ -13,11 +13,12 @@ import os.path
 from os import path
 
 modelName = "PanSF"
+trainingCount = 10
 
 input_nbr = 5
 output_nbr = 1
 
-# ----------------------define the SegNet-----------------------------
+# ----------------------Define SegNet-----------------------------
 class SegNet(nn.Module):
     def __init__(self, input_nbr, output_nbr):
         super(SegNet, self).__init__()
@@ -139,20 +140,21 @@ if modelFlag:
 
 model.eval()
 
-testPath = 'Testing/'
-path_compCoordX = testPath + 'Cx\'/'
-path_compCoordY = testPath + 'Cy\'/'
-path_compObs = testPath + 'E\'/'
-path_compOcc = testPath + 'A\'/'
-path_dist = testPath + 'G\'/'
+dataPath = 'Data/Testing/'
+savePath = 'Output/'
+path_compCoordX = dataPath + 'Cx\'/'
+path_compCoordY = dataPath + 'Cy\'/'
+path_compObs = dataPath + 'E\'/'
+path_compOcc = dataPath + 'A\'/'
+path_dist = dataPath + 'G\'/'
 
-for i in range(10):
+image_ext = '.png'
+image_size = 112
+
+for i in range(trainingCount):
     print(i)
 
-    output_npy_path = 'Output/' + str(i) + '.png'
-
-    image_ext = '.png'
-    image_size = 112
+    output_npy_path = savePath + str(i) + image_ext
 
     image_open_path_A = path_compOcc + str(i) + image_ext
     image_open_path_E = path_compObs + str(i) + image_ext
@@ -183,17 +185,17 @@ for i in range(10):
     image_Cy = np.array(image_Cy, dtype=float)
     image_Cy = image_Cy / 255.0
 
-    image_combined = np.zeros(image_size * image_size * 5).reshape(image_size, image_size, 5)
+    image_input = np.zeros(image_size * image_size * 5).reshape(image_size, image_size, 5)
     for Dx in range(image_size):
         for Dy in range(image_size):
-            image_combined[Dx, Dy, 0] = image_A[Dx, Dy]
-            image_combined[Dx, Dy, 1] = image_E[Dx, Dy]
-            image_combined[Dx, Dy, 2] = image_G[Dx, Dy]
-            image_combined[Dx, Dy, 3] = image_Cx[Dx, Dy]
-            image_combined[Dx, Dy, 4] = image_Cy[Dx, Dy]
-    image_combined = image_combined.transpose()
+            image_input[Dx, Dy, 0] = image_A[Dx, Dy]
+            image_input[Dx, Dy, 1] = image_E[Dx, Dy]
+            image_input[Dx, Dy, 2] = image_G[Dx, Dy]
+            image_input[Dx, Dy, 3] = image_Cx[Dx, Dy]
+            image_input[Dx, Dy, 4] = image_Cy[Dx, Dy]
+    image_input = image_input.transpose()
 
-    data = image_combined
+    data = image_input
     data = torch.tensor(data, dtype=torch.float64)
     data = Variable(data, requires_grad=True)
     data = data.unsqueeze(0)  # .cuda().type(torch.FloatTensor)
